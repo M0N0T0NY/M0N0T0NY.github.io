@@ -23,16 +23,20 @@
     </nav>
 
     <div class="main-container">
-        <div class="card blur">
+        <div class="card blur noblur">
             <h2>Impostazioni</h2>
             <p>Utilizza lo switch per passare alla versione "Dark" del sito</p>
             <label class="switch">
-                <input type="checkbox" checked onclick="myFunction()">
+                <input type="checkbox" checked onclick="darkmode()">
                 <span></span>
             </label>
+            <!-- <label class="switch">
+                <input type="checkbox" checked onclick="blurfuntion()">
+                <span></span>
+            </label> -->
         </div>
 
-        <div class="card ab blur">
+        <div class="card ab blur noblur">
             <h2>Antonio Bertuccio</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores pariatur tempore dicta et
                 provident quibusdam ipsa, eum atque minus eos nulla, harum cupiditate dolore consequatur autem. Hic,
@@ -40,7 +44,7 @@
             </p>
         </div>
 
-        <div class="card web blur">
+        <div class="card web blur noblur">
             <h2>Web</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores pariatur tempore dicta et
                 provident quibusdam ipsa, eum atque minus eos nulla, harum cupiditate dolore consequatur autem. Hic,
@@ -48,7 +52,7 @@
             </p>
         </div>
 
-        <div class="card blur">
+        <div class="card blur noblur">
             <h2>Grafiche</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores pariatur tempore dicta et
                 provident quibusdam ipsa, eum atque minus eos nulla, harum cupiditate dolore consequatur autem. Hic,
@@ -56,7 +60,7 @@
             </p>
         </div>
 
-        <div class="card blur">
+        <div class="card blur noblur">
             <h2>Social media</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores pariatur tempore dicta et
                 provident quibusdam ipsa, eum atque minus eos nulla, harum cupiditate dolore consequatur autem. Hic,
@@ -66,17 +70,24 @@
     </div>
     <footer>
         <ul>
-            <li><a href="portfolio.html"></a></li>
-            <li><a href="index.html"></a></li>
-            <li><a href="contatti.html"></a></li>
+            <li><a target="_blank" href="https://wa.me/3775913330"><img class="icons" src="/media/whatsapp.png"></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/tony_is_on_fire_xoxo/"><img class="icons" src="/media/instagram.png"></a></a></li>
+            <li><a target="_blank" href="http://m.me/anto.bertu"><img class="icons" src="/media/messenger.png"></a></a></li>
         </ul>
     </footer>
 </body>
 
 <script>
-    function myFunction() {
+    function darkmode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
+    }
+</script>
+
+<script>
+    function blurfunction() {
+        var element = document.body;
+        element.classList.toggle("blur");
     }
 </script>
 
