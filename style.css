@@ -110,7 +110,7 @@ li a:hover {
 
 /* BLUR */
 
-.card.blur {
+/* .card.blur {
     transition: all 0.25s ease-in-out;
     filter: blur(2.5px);
 }
@@ -142,7 +142,7 @@ li a:hover {
         -webkit-filter: blur(0px);
         filter: blur(0px);
     }
-}
+} */
 
 /* BRIGHT AND DARK MODE*/
 
